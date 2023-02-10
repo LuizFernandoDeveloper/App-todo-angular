@@ -10,6 +10,9 @@ export class TodoButtonDeleteAllComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
+
 
 }

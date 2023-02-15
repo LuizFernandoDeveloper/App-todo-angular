@@ -13,6 +13,21 @@ section {
     }
     ul {
         padding: 20px;
+        overflow-y: auto;
+        height: 300px;
+        &::-webkit-scrollbar{
+            width: 18px;
+        }
+        &::-webkit-scrollbar-track{
+            background-color: $tertiary-background-color;
+            border: none;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: blueviolet ;
+            border-radius: 15px;
+            height: 30px;
+            width: 10px;
+        }
         li {
         display: flex;
         justify-content: space-between;
@@ -32,6 +47,9 @@ section {
                 &.checked {
                     text-decoration: line-through;
                 }
+            }
+            &.checked{
+                text-decoration: line-through;
             }
         }
         button {
